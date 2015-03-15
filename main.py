@@ -180,10 +180,10 @@ class UpdateHandler(Handler):
         tasklist_name = self.user_check()
         user = users.get_current_user()
 
-        self.write("Filler page for updating the database" + "<br>")
-        self.write("The full HTTP request: " + "<br><br>")
-        self.write(self.request)
-        self.write("<br><br>")
+        # self.write("Filler page for updating the database" + "<br>")
+        # self.write("The full HTTP request: " + "<br><br>")
+        # self.write(self.request)
+        # self.write("<br><br>")
 
         # get all of the checkbox names
         checked_tasks = self.request.arguments()
