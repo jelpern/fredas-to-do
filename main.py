@@ -70,7 +70,7 @@ class Handler(webapp2.RequestHandler):
 class Task(ndb.Model):
 
     index = ndb.IntegerProperty()
-    description = ndb.StringProperty(indexed = False) 
+    description = ndb.StringProperty(indexed=False) 
     completed = ndb.BooleanProperty()
     due_date = ndb.DateProperty()
     created = ndb.DateTimeProperty(auto_now_add=True)
@@ -94,7 +94,7 @@ class MainHandler(Handler):
 
     def get(self):
         # Checks for active Google account session
-        tasklist_name = self.user_check()
+        # tasklist_name = self.user_check()
         user = users.get_current_user()
         url = users.create_logout_url(self.request.uri)
         url_linktext = 'Logout'
