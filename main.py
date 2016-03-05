@@ -117,6 +117,15 @@ class MainHandler(Handler):
         # sample_task2.put()
 
         # back to our regularly scheduled programming
+        
+        # why can't I use not(Task.completed) the way the Python linter wants me to?
+        # print (Task.completed)
+        #     BooleanProperty('completed')
+        # print (Task.completed == False)
+        #     FilterNode('completed', '=', False)
+        # print (not(Task.completed))
+        #     False
+
         tasks_query = Task.query(ndb.AND(Task.completed == False,
                                          Task.owner == user)).order(Task.created)
         tasks_list = []
