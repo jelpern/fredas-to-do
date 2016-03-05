@@ -1,7 +1,7 @@
 # fredas-to-do
 A very simple to-do list web "app", created to demonstrate basic programming ability. A running version is online at http://fredas-to-do.appspot.com/. Also: my first repository on GitHub.
 
-KNOWN ISSUES: After you add a task, you won't see it,  have to hit 'Update' for it to appear on the list.
+KNOWN ISSUES: After you add a task, it will look like nothing has been added to the list. You have to hit 'Update' for it to appear.
 
 BACKSTORY
 
